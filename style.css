@@ -1,0 +1,155 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#222;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111;
+    color:white;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+}
+
+.icons i{
+    margin-left:15px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:60px 8%;
+}
+
+.hero-text{
+    max-width:500px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#2ecc71;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.hero img{
+    width:350px;
+}
+
+/* SECTIONS */
+
+h2{
+    text-align:center;
+    margin:40px 0;
+}
+
+.category-container,
+.product-container,
+.review-container,
+.features{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.category,
+.product,
+.review,
+.feature{
+    background:white;
+    width:250px;
+    text-align:center;
+    padding:20px;
+    border-radius:10px;
+}
+
+.category img,
+.product img{
+    width:100%;
+    border-radius:10px;
+}
+
+.product button,
+.newsletter button{
+    margin-top:10px;
+    padding:10px 20px;
+    border:none;
+    background:#111;
+    color:white;
+    cursor:pointer;
+}
+
+.newsletter{
+    text-align:center;
+    padding:50px;
+    background:#111;
+    color:white;
+}
+
+.newsletter input{
+    padding:10px;
+    margin-top:15px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.nav-links{
+    display:none;
+}
+
+.hero img{
+    width:250px;
+    margin-top:20px;
+}
+}
